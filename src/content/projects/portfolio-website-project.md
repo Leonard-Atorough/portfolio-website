@@ -2,7 +2,6 @@
 title: "Portfolio Website"
 description: "A personal portfolio website showcasing my projects and skills."
 imageUrl: "/images/portfolio.png"
-link: "/projects/portfolio-website"
 tags: ["React", "TypeScript", "CSS", "Web Development", "Astro"]
 liveUrl: "https://example.com"
 githubUrl: "https://github.com/Leonard-Atorough/portfolio-website"

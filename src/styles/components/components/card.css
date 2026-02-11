@@ -8,6 +8,7 @@
   box-shadow: var(--button-shadow);
   transition: box-shadow var(--transition-speed-normal);
   max-width: 400px;
+  width: 100%;
 }
 
 .card:hover {
@@ -41,24 +42,20 @@
 
 .project-card__image {
   width: 100%;
-  height: auto;
+  min-height: 100px;
+  height: 100%;
   border-radius: var(--border-radius-small);
+  border: var(--border-width) var(--border-style) var(--border-color);
+  background-color: var(--secondary-color);
 }
 
-.project-card-image {
-  width: 100%;
-  height: auto;
-  min-height: 200px;
-  border-radius: var(--border-radius-small);
-}
-
-.project-card-content {
+.project-card__content {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-medium);
 }
 
-.project-card-tags {
+.project-card__tags {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -67,7 +64,7 @@
   gap: var(--spacing-small);
 }
 
-.project-card-tags > * {
+.project-card__tags > * {
   flex: 1 1 auto;
   text-align: center;
   max-width: 100%;

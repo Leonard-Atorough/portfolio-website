@@ -2,7 +2,6 @@ export interface ProjectCardProps {
   title: string;
   description: string;
   imageUrl: string;
-  link: string;
   tags?: string[];
   liveUrl?: string;
   githubUrl?: string;
@@ -11,17 +10,14 @@ export interface ProjectCardProps {
 export default function ProjectCard(props: ProjectCardProps) {
   return (
     <div className="card project-card">
-      <div className="project-card-image">
-        <img src={props.imageUrl || ""} alt={props.title} />
+      <div className="project-card__image">
+        {props.imageUrl && <img src={props.imageUrl || ""} alt={props.title} />}
       </div>
-      <div className="project-card-content">
+      <div className="project-card__content">
         <h3>{props.title}</h3>
         <p>{props.description}</p>
-        <a href={props.link} className="btn btn--primary btn--noshadow">
-          View Project
-        </a>
         {props.tags && (
-          <div className="project-card-tags">
+          <div className="project-card__tags">
             {props.tags.map((tag, index) => (
               <span key={index} className="badge badge-skill badge-sm">
                 {tag}
@@ -34,7 +30,7 @@ export default function ProjectCard(props: ProjectCardProps) {
             href={props.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn--secondary btn--noshadow btn--narrow"
+            className="btn btn--primary btn--noshadow btn--narrow"
           >
             Live Demo
           </a>
