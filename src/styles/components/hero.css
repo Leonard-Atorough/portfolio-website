@@ -1,0 +1,41 @@
+/* Hero Section Styles */
+
+.hero {
+  padding: var(--spacing-large);
+  background: linear-gradient(135deg, var(--primary-color) 75%, var(--accent-color) 100%);
+  text-align: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: var(--title-font-size);
+  margin-bottom: var(--spacing-medium);
+  color: var(--text-color);
+}
+
+.hero-subtitle {
+  font-size: var(--body-font-size);
+  margin-bottom: var(--spacing-large);
+  color: var(--text-color);
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-medium);
+  justify-content: center;
+  margin-bottom: var(--spacing-large);
+}
+
+.skill-badge {
+  padding: var(--spacing-small) var(--spacing-medium);
+  border: var(--border-width) var(--border-style) var(--border-color);
+  border-radius: var(--border-radius-medium);
+  background-color: var(--accent-color);
+  color: var(--text-color-dark);
+  font-weight: bold;
+}

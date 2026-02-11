@@ -1,0 +1,25 @@
+/* Header / Navigation Component Styles */
+
+.site-header {
+  padding: var(--spacing-large);
+  text-align: center;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header__title {
+  font-size: var(--title-font-size);
+  margin-bottom: var(--spacing-medium);
+}
+
+.site-header .site-nav {
+  display: flex;
+}
+
+.site-header .nav-list {
+  display: flex;
+  gap: var(--spacing-large);
+  align-items: center;
+}

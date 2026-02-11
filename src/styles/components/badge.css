@@ -1,0 +1,122 @@
+/* Badge Component Styles */
+
+.badge {
+  display: inline-block;
+  padding: var(--spacing-small) var(--spacing-medium);
+  border: var(--border-width) var(--border-style) var(--border-black);
+  border-radius: var(--border-radius-small);
+  font-size: var(--info-font-size);
+  font-weight: bold;
+  transition: all var(--transition-speed-normal);
+}
+
+/* Skill Badge Variant */
+.badge-skill {
+  background-color: var(--accent-color);
+  color: var(--text-color-dark);
+  border-color: var(--text-color-dark);
+}
+
+.badge-skill:hover {
+  box-shadow: var(--button-shadow);
+  transform: translateY(-2px);
+}
+
+/* Social Badge Variant */
+.badge-social {
+  background-color: var(--secondary-color);
+  color: var(--text-color-dark);
+  border-color: var(--text-color-dark);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-small);
+}
+
+.badge-social:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Primary Badge Variant */
+.badge-primary {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-color: var(--text-color);
+}
+
+.badge-primary:hover {
+  box-shadow: var(--button-shadow);
+  transform: translateY(-2px);
+}
+
+/* Secondary Badge Variant */
+.badge-secondary {
+  background-color: var(--secondary-color);
+  color: var(--text-color-dark);
+  border-color: var(--text-color-dark);
+}
+
+.badge-secondary:hover {
+  background-color: var(--card-background);
+  box-shadow: var(--button-shadow);
+}
+
+/* Accent Badge Variant */
+.badge-accent {
+  background-color: var(--accent-color);
+  color: var(--text-color-dark);
+  border-color: var(--text-color-dark);
+}
+
+.badge-accent:hover {
+  box-shadow: var(--button-shadow);
+}
+
+/* Small Badge (Compact) */
+.badge-sm {
+  padding: 4px 8px;
+  font-size: 0.75rem;
+}
+
+/* Large Badge */
+.badge-lg {
+  padding: var(--spacing-medium) var(--spacing-large);
+  font-size: 1rem;
+}
+
+/* Badge with Icon */
+.badge-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge-icon svg {
+  width: 1em;
+  height: 1em;
+}
+
+/* Status Badge Variant */
+.badge-success {
+  background-color: #4ade80;
+  color: var(--text-color-dark);
+  border-color: var(--text-color-dark);
+}
+
+.badge-warning {
+  background-color: #fbbf24;
+  color: var(--text-color-dark);
+  border-color: var(--text-color-dark);
+}
+
+.badge-danger {
+  background-color: #f87171;
+  color: var(--text-color);
+  border-color: var(--text-color-dark);
+}
+
+.badge-info {
+  background-color: #60a5fa;
+  color: var(--text-color);
+  border-color: var(--text-color-dark);
+}

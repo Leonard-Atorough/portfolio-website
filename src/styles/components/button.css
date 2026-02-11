@@ -1,0 +1,81 @@
+/* Button Component Styles */
+
+.btn {
+  padding: var(--spacing-medium) var(--spacing-large);
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: var(--border-width) var(--border-style) var(--border-black);
+  border-radius: var(--border-radius-medium);
+  font-weight: bold;
+  font-size: var(--body-font-size);
+  cursor: pointer;
+  box-shadow: var(--button-shadow);
+  transition: all var(--transition-speed-normal);
+}
+
+.btn:hover {
+  box-shadow: var(--button-shadow-hover);
+}
+
+.btn:active {
+  box-shadow: var(--button-shadow-active);
+}
+
+.btn--primary {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-color: var(--border-black);
+}
+
+.btn--primary:hover {
+  box-shadow: var(--button-shadow-hover);
+}
+
+.btn--secondary {
+  background-color: var(--secondary-color);
+  color: var(--text-color-dark);
+  border-color: var(--text-color-dark);
+}
+
+.btn--secondary:hover {
+  background-color: var(--card-background);
+  color: var(--text-color-secondary);
+}
+
+.btn--ghost {
+  background-color: transparent;
+  color: var(--text-color);
+  border-color: var(--text-color);
+}
+
+.btn--ghost:hover {
+  background-color: var(--text-color);
+  color: var(--button-text-color);
+}
+
+.btn--noshadow {
+  box-shadow: none;
+}
+
+.btn--narrow {
+  padding: var(--spacing-small) var(--spacing-medium);
+  font-size: var(--info-font-size);
+}
+
+.hero-button {
+  display: inline-block;
+  padding: var(--spacing-medium) var(--spacing-large);
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: var(--border-width) var(--border-style) var(--border-black);
+  border-radius: var(--border-radius-medium);
+  font-weight: bold;
+  font-size: var(--body-font-size);
+  cursor: pointer;
+  box-shadow: var(--button-shadow);
+  transition: box-shadow var(--transition-speed-normal);
+}
+
+.hero-button:hover {
+  box-shadow: var(--button-shadow-hover);
+}
