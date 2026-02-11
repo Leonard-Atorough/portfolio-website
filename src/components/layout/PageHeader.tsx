@@ -13,12 +13,12 @@ export default function PageHeader(props: PageHeaderProps) {
     <header className="site-header">
       <h1 className="site-header__title">{props.title}</h1>
       <div className="hamburger" onClick={() => setHamburgerOpen(!isHamburgerOpen)}>
-        <div className={`hamburger__line ${isHamburgerOpen ? "open" : ""}`}></div>
-        <div className={`hamburger__line ${isHamburgerOpen ? "open" : ""}`}></div>
-        <div className={`hamburger__line ${isHamburgerOpen ? "open" : ""}`}></div>
+        <div className={`hamburger__line ${isHamburgerOpen ? "--left" : ""}`}></div>
+        <div className={`hamburger__line ${isHamburgerOpen ? "--middle" : ""}`}></div>
+        <div className={`hamburger__line ${isHamburgerOpen ? "--right" : ""}`}></div>
       </div>
       {props.navItems && (
-        <nav className="site-nav">
+        <nav className={`site-nav ${isHamburgerOpen ? "--open" : ""}`}>
           <ul className="nav-list">
             {props.navItems.map(
               (item, index) => (

@@ -14,12 +14,16 @@
   margin-bottom: var(--spacing-medium);
 }
 
-.site-header .site-nav {
-  display: flex;
-}
+/* Mobile styles */
 
-.site-header .nav-list {
-  display: flex;
-  gap: var(--spacing-large);
-  align-items: center;
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    gap: var(--spacing-medium);
+    padding: var(--spacing-medium) 0;
+  }
+
+  .site-header__title {
+    font-size: var(--subtitle-font-size);
+  }
 }

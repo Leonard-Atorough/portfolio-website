@@ -1,7 +1,7 @@
 /* Navigation Component Styles */
 
 .site-nav {
-  margin-top: var(--spacing-large);
+  display: flex;
 }
 
 .nav-list {
@@ -9,6 +9,7 @@
   flex-wrap: wrap;
   gap: var(--spacing-medium);
   justify-content: center;
+  align-items: center;
 }
 
 .nav-item {
@@ -39,4 +40,39 @@
   height: 3px;
   background-color: var(--text-color);
   transition: all var(--transition-speed-normal);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .site-nav {
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: all var(--transition-speed-normal);
+  }
+
+  .site-nav.--open {
+    height: 100vh;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: var(--spacing-small);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger__line.--left {
+    transform: rotate(45deg) translate(10px, 5px);
+  }
+
+  .hamburger__line.--middle {
+    opacity: 0;
+  }
+
+  .hamburger__line.--right {
+    transform: rotate(-45deg) translate(10px, -5px);
+  }
 }
