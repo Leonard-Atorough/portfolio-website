@@ -13,7 +13,8 @@
   --text-color-secondary: #ff6b6b; /* Pastel Red Text */
   --text-color-accent: #4ecdc4; /* Pastel Teal Text */
   --text-color-dark: #1a1a1a; /* Dark Text */
-  --border-black: #000000; /* Solid Black Border */
+  --border-color: #000000; /* Solid Black Border */
+  --border-color-secondary: #ff6b6b; /* Pastel Red Border */
   --shadow-black: rgba(0, 0, 0, 0.5); /* Solid Black Shadow */
 
   /* Font */
@@ -28,14 +29,16 @@
   --info-font-size: 0.875rem;
 
   /* Spacing */
-  --spacing-small: 8px;
-  --spacing-medium: 16px;
-  --spacing-large: 32px;
+  --spacing-small: 0.25rem;
+  --spacing-medium: 0.5rem;
+  --spacing-normal: 1rem;
+  --spacing-large: 2rem;
+  --spacing-xlarge: 4rem;
 
   /* Borders */
   --border-width: 2px;
+  --border-width-thick: 4px;
   --border-style: solid;
-  --border-color: var(--border-black);
   --border-radius-small: 4px;
   --border-radius-medium: 8px;
   --border-radius-large: 12px;

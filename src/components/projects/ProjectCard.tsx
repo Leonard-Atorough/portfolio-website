@@ -14,8 +14,8 @@ export default function ProjectCard(props: ProjectCardProps) {
         {props.imageUrl && <img src={props.imageUrl || ""} alt={props.title} />}
       </div>
       <div className="project-card__content">
-        <h3>{props.title}</h3>
-        <p>{props.description}</p>
+        <h3 className="card__title mb-sm">{props.title}</h3>
+        <p className="card__description">{props.description}</p>
         {props.tags && (
           <div className="project-card__tags">
             {props.tags.map((tag, index) => (

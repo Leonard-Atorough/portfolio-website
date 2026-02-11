@@ -2,7 +2,8 @@
 
 .card {
   padding: var(--spacing-large);
-  background-color: var(--card-background);
+  background-color: var(--card-background-white);
+  color: var(--text-color-dark);
   border: var(--border-width) var(--border-style) var(--border-color);
   border-radius: var(--border-radius-medium);
   box-shadow: var(--button-shadow);
@@ -15,25 +16,24 @@
   box-shadow: var(--button-shadow-hover);
 }
 
-.card-title {
-  font-size: var(--heading-font-size);
-  margin-bottom: var(--spacing-medium);
+.card__title {
+  font-size: var(--subheading-font-size);
   color: var(--text-color-dark);
 }
 
-.card-description {
-  font-size: var(--body-font-size);
+.card__description {
+  font-size: var(--info-font-size);
   color: var(--text-color-dark);
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  word-wrap: break-word;
   gap: var(--spacing-medium);
-  background-color: var(--card-background-white);
-  color: var(--text-color-dark);
   box-shadow: none;
+  border: var(--border-width) var(--border-style) var(--border-color-secondary);
 }
 
 .project-card:hover {
@@ -42,8 +42,7 @@
 
 .project-card__image {
   width: 100%;
-  min-height: 100px;
-  height: 100%;
+  height: 200px;
   border-radius: var(--border-radius-small);
   border: var(--border-width) var(--border-style) var(--border-color);
   background-color: var(--secondary-color);
@@ -60,7 +59,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   gap: var(--spacing-small);
 }
 

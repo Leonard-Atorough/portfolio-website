@@ -1,35 +1,30 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { getCollection } from "astro:content";
 import ProjectCard from "../components/projects/ProjectCard";
-
-const projects = await getCollection("projects");
-console.log("Projects found:", projects.length);
+import projects from "../data/projects.json";
 ---
 
 <Layout>
-  <section id="projects" class="container mt-lg">
+  <section id="projects" class="container mt-lg mb-lg mx-auto">
     <div class="grid grid-col--3">
       {
         projects.map(
           (project: {
-            data: {
-              title: string;
-              description: string;
-              imageUrl: string;
-              tags?: string[];
-              liveUrl?: string;
-              githubUrl?: string;
-            };
+            title: string;
+            description: string;
+            imageUrl: string;
+            tags?: string[];
+            liveUrl?: string;
+            githubUrl?: string;
           }) => (
             <ProjectCard
               client:load
-              title={project.data.title}
-              description={project.data.description}
-              imageUrl={project.data.imageUrl}
-              tags={project.data.tags}
-              liveUrl={project.data.liveUrl}
-              githubUrl={project.data.githubUrl}
+              title={project.title}
+              description={project.description}
+              imageUrl={project.imageUrl}
+              tags={project.tags}
+              liveUrl={project.liveUrl}
+              githubUrl={project.githubUrl}
             />
           ),
         )

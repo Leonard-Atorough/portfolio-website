@@ -4,7 +4,7 @@
   padding: var(--spacing-medium) var(--spacing-large);
   background-color: var(--button-background);
   color: var(--button-text-color);
-  border: var(--border-width) var(--border-style) var(--border-black);
+  border: var(--border-width) var(--border-style) var(--border-color);
   border-radius: var(--border-radius-medium);
   font-weight: bold;
   font-size: var(--body-font-size);
@@ -24,7 +24,7 @@
 .btn--primary {
   background-color: var(--primary-color);
   color: var(--text-color);
-  border-color: var(--border-black);
+  border-color: var(--border-color);
 }
 
 .btn--primary:hover {
@@ -67,7 +67,7 @@
   padding: var(--spacing-medium) var(--spacing-large);
   background-color: var(--button-background);
   color: var(--button-text-color);
-  border: var(--border-width) var(--border-style) var(--border-black);
+  border: var(--border-width) var(--border-style) var(--border-color);
   border-radius: var(--border-radius-medium);
   font-weight: bold;
   font-size: var(--body-font-size);

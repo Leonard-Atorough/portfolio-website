@@ -10,21 +10,21 @@ export default function PageHeader(props: PageHeaderProps) {
   const [isHamburgerOpen, setHamburgerOpen] = useState(false);
 
   return (
-    <header className="site-header">
-      <h1 className="site-header__title">{props.title}</h1>
-      <div className="hamburger" onClick={() => setHamburgerOpen(!isHamburgerOpen)}>
+    <header className="site-header p-md gap-sm-mobile">
+      <h1 className="site-header__title mb-md ">{props.title}</h1>
+      <div className="hamburger gap-xs-mobile" onClick={() => setHamburgerOpen(!isHamburgerOpen)}>
         <div className={`hamburger__line ${isHamburgerOpen ? "--left" : ""}`}></div>
         <div className={`hamburger__line ${isHamburgerOpen ? "--middle" : ""}`}></div>
         <div className={`hamburger__line ${isHamburgerOpen ? "--right" : ""}`}></div>
       </div>
       {props.navItems && (
         <nav className={`site-nav ${isHamburgerOpen ? "--open" : ""}`}>
-          <ul className="nav-list">
+          <ul className="nav-list gap-sm gap-lg-mobile">
             {props.navItems.map(
               (item, index) => (
                 (item.type = item.type || "link"),
                 (
-                  <li key={index} className="nav-item">
+                  <li key={index} className="nav-item px-sm px-md-mobile py-sm-mobile">
                     {item.type === "button" ? (
                       <button
                         className="btn btn--secondary"

@@ -3,7 +3,7 @@
 .badge {
   display: inline-block;
   padding: var(--spacing-small) var(--spacing-medium);
-  border: var(--border-width) var(--border-style) var(--border-black);
+  border: var(--border-width) var(--border-style) var(--border-color);
   border-radius: var(--border-radius-small);
   font-size: var(--info-font-size);
   font-weight: bold;

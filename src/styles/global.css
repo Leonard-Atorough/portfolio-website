@@ -19,9 +19,11 @@
 @import "./components/components/header.css";
 @import "./components/components/nav.css";
 @import "./components/components/hero.css";
+@import "./components/components/about.css";
 @import "./components/components/card.css";
 @import "./components/components/button.css";
 @import "./components/components/badge.css";
+@import "./components/components/footer.css";
 
 /* 5. PAGES - Page-Specific Styles */
 @import "./components/pages/projects.css";

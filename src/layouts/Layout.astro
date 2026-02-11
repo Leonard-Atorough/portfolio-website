@@ -1,4 +1,5 @@
 ---
+import PageFooter from "../components/layout/PageFooter.astro";
 import PageHeader from "../components/layout/PageHeader.tsx";
 import "../styles/global.css";
 ---
@@ -26,15 +27,7 @@ import "../styles/global.css";
         ]}
       />
       <slot />
+      <PageFooter />
     </div>
   </body>
 </html>
-
-<style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>

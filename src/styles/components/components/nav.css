@@ -7,13 +7,8 @@
 .nav-list {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-medium);
   justify-content: center;
   align-items: center;
-}
-
-.nav-item {
-  padding: var(--spacing-small) var(--spacing-medium);
 }
 
 .nav-item__link {
@@ -65,7 +60,7 @@
   }
 
   .hamburger__line.--left {
-    transform: rotate(45deg) translate(10px, 5px);
+    transform: rotate(45deg) translate(5px, 5px);
   }
 
   .hamburger__line.--middle {
@@ -73,6 +68,6 @@
   }
 
   .hamburger__line.--right {
-    transform: rotate(-45deg) translate(10px, -5px);
+    transform: rotate(-45deg) translate(5px, -5px);
   }
 }

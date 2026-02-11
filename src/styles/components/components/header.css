@@ -1,17 +1,16 @@
 /* Header / Navigation Component Styles */
 
 .site-header {
-  padding: var(--spacing-large);
   text-align: center;
   background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: var(--border-width) solid var(--border-color);
 }
 
 .site-header__title {
   font-size: var(--title-font-size);
-  margin-bottom: var(--spacing-medium);
 }
 
 /* Mobile styles */
@@ -19,8 +18,6 @@
 @media (max-width: 768px) {
   .site-header {
     flex-direction: column;
-    gap: var(--spacing-medium);
-    padding: var(--spacing-medium) 0;
   }
 
   .site-header__title {
