@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../components/projects/ProjectCard";
 
 const projects = await getCollection("projects");
 console.log("Projects found:", projects.length);
@@ -9,7 +9,7 @@ console.log("Projects found:", projects.length);
 
 <Layout>
   <section id="projects" class="container">
-    <div class="projects-grid">
+    <div class="grid grid-col--3">
       {
         projects.map(
           (project: {

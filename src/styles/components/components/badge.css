@@ -98,25 +98,16 @@
 
 /* Status Badge Variant */
 .badge-success {
-  background-color: #4ade80;
+  background-color: #51cf66;
   color: var(--text-color-dark);
-  border-color: var(--text-color-dark);
+}
+
+.badge-error {
+  background-color: #ff6b6b;
+  color: var(--text-color);
 }
 
 .badge-warning {
-  background-color: #fbbf24;
+  background-color: #ffd43b;
   color: var(--text-color-dark);
-  border-color: var(--text-color-dark);
-}
-
-.badge-danger {
-  background-color: #f87171;
-  color: var(--text-color);
-  border-color: var(--text-color-dark);
-}
-
-.badge-info {
-  background-color: #60a5fa;
-  color: var(--text-color);
-  border-color: var(--text-color-dark);
 }

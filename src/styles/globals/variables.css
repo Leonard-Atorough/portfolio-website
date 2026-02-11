@@ -1,4 +1,4 @@
-/* CSS Variables - Shared across all components */
+/* CSS Variables - Design Tokens */
 :root {
   --primary-color: #ff6b6b; /* Pastel Red */
   --secondary-color: #f7fff7; /* Off-White */
@@ -38,6 +38,9 @@
   --button-shadow: -8px 8px 0 var(--shadow-black);
   --button-shadow-hover: -12px 12px 0 var(--shadow-black);
   --button-shadow-active: -4px 4px 0 var(--shadow-black);
+  --button-shadow-none: none;
+  --button-shadow-hover-none: none;
+  --button-shadow-active-none: none;
 
   /* Transitions */
   --transition-speed-normal: 0.2s;

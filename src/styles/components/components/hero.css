@@ -2,9 +2,9 @@
 
 .hero {
   padding: var(--spacing-large);
-  background: linear-gradient(135deg, var(--primary-color) 75%, var(--accent-color) 100%);
+  background: linear-gradient(180deg, var(--primary-color) 95%, var(--background-color) 100%);
   text-align: center;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

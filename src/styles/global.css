@@ -1,49 +1,31 @@
 /* ====================================
    GLOBAL STYLESHEET
-   Imports all theme, layout, components
+   SMACSS Architecture: Imports in order
+   of specificity and cascade
    ==================================== */
 
-@import "./variables.css";
-@import "./layout/layout.css";
-@import "./layout/container.css";
-@import "./pages/projects.css";
-@import "./components/header.css";
-@import "./components/nav.css";
-@import "./components/hero.css";
-@import "./components/card.css";
-@import "./components/button.css";
-@import "./components/badge.css";
-@import "./utilities/spacing.css";
+/* 1. GLOBALS - CSS Variables & Design Tokens */
+@import "./globals/variables.css";
 
-/* ====================================
-   BASE RESETS
-   ==================================== */
+/* 2. BASE - Resets, Typography, Foundation */
+@import "./base/reset.css";
+@import "./base/typography.css";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* 3. STRUCTURE - Layouts, Grid, Flex */
+@import "./structure/layout.css";
+@import "./structure/container.css";
 
-body {
-  font-family: var(--font-family);
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
+/* 4. COMPONENTS - Component Styles */
+@import "./components/components/header.css";
+@import "./components/components/nav.css";
+@import "./components/components/hero.css";
+@import "./components/components/card.css";
+@import "./components/components/button.css";
+@import "./components/components/badge.css";
 
-ul,
-li {
-  list-style: none;
-}
+/* 5. PAGES - Page-Specific Styles */
+@import "./components/pages/projects.css";
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  background: none;
-  font-family: inherit;
-}
+/* 6. UTILITIES & UTILITIES - Modifier Classes & One-off Hacks */
+@import "./utils/modifiers.css";
+@import "./utils/shame.css";
