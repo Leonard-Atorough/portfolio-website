@@ -1,9 +1,14 @@
 /* CSS Variables - Design Tokens */
 :root {
   --primary-color: #ff6b6b; /* Pastel Red */
-  --secondary-color: #f7fff7; /* Off-White */
+  --secondary-color: #a0f688; /* Pastel Green */
   --accent-color: #4ecdc4; /* Pastel Teal */
+
   --background-color: #1a1a1a; /* Dark Background */
+  --card-background: #333333; /* Dark Card Background */
+  --card-background-white: #f7fff7; /* Off-White Card Background */
+  --button-background: #4ecdc4; /* Teal Button Background */
+
   --text-color: #f7fff7; /* Off-White Text */
   --text-color-secondary: #ff6b6b; /* Pastel Red Text */
   --text-color-accent: #4ecdc4; /* Pastel Teal Text */

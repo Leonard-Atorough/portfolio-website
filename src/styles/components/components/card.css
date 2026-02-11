@@ -30,7 +30,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: var(--spacing-medium);
-  background-color: var(--secondary-color);
+  background-color: var(--card-background-white);
   color: var(--text-color-dark);
   box-shadow: none;
 }

@@ -5,7 +5,7 @@ imageUrl: "/images/portfolio.png"
 link: "/projects/portfolio-website"
 tags: ["React", "TypeScript", "CSS", "Web Development", "Astro"]
 liveUrl: "https://example.com"
-githubUrl: "https://github.com/example/portfolio"
+githubUrl: "https://github.com/Leonard-Atorough/portfolio-website"
 ---
 
 # Portfolio Website
