@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { BlogCard } from "../components/blog/BlogCard";
+
+import { getCollection } from "astro:content";
+const blogPosts = await getCollection("posts");
+console.log(blogPosts);
+---
+
+<Layout>
+  <section id="blog" class="container mt-lg mb-lg mx-auto">
+    <h2 class="section-title">Blog</h2>
+    <p class="section-description">
+      Welcome to my blog! Here, I share my thoughts, insights, and experiences on various topics
+      related to technology, programming, and personal development. Stay tuned for regular updates
+      and feel free to engage with the content!
+    </p>
+    <div class="grid grid-col--2">
+      {
+        blogPosts.map((post) => (
+          <BlogCard
+            client:load
+            title={post.data.title}
+            description={post.data.description}
+            imageUrl={post.data.imageUrl}
+            date={post.data.date}
+            link={`/blog/${post.slug}`}
+          />
+        ))
+      }
+    </div>
+  </section>
+</Layout>
