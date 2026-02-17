@@ -5,13 +5,23 @@ export interface ProjectCardProps {
   tags?: string[];
   liveUrl?: string;
   githubUrl?: string;
+  postUrl?: string;
 }
 
 export default function ProjectCard(props: ProjectCardProps) {
   return (
     <div className="card project-card">
+      <div className="mb-md">
+        {props.postUrl && (
+          <a className="btn btn--primary flex" href={props.postUrl}>
+            {`${props.title} →`}
+          </a>
+        )}
+      </div>
       <div className="project-card__image">
-        {props.imageUrl && <img src={props.imageUrl || ""} alt={props.title} />}
+        {props.imageUrl && (
+          <img className="img-responsive img-large" src={props.imageUrl || ""} alt={props.title} />
+        )}
       </div>
       <div className="project-card__content">
         <h3 className="card__title mb-sm">{props.title}</h3>

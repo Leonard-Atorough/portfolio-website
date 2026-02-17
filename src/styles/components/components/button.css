@@ -29,6 +29,7 @@
 
 .btn--primary:hover {
   box-shadow: var(--button-shadow-hover);
+  color: var(--text-color-dark);
 }
 
 .btn--secondary {
@@ -44,13 +45,13 @@
 
 .btn--ghost {
   background-color: transparent;
-  color: var(--text-color);
+  color: var(--text-color-secondary);
   border-color: var(--text-color);
 }
 
 .btn--ghost:hover {
   background-color: var(--text-color);
-  color: var(--button-text-color);
+  color: var(--text-color-dark);
 }
 
 .btn--noshadow {

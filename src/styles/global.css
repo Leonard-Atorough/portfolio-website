@@ -11,6 +11,9 @@
 @import "./base/reset.css";
 @import "./base/typography.css";
 
+/* 2.5 MARKDOWN - Markdown Content Styles */
+@import "./markdown.css";
+
 /* 3. STRUCTURE - Layouts, Grid, Flex */
 @import "./structure/layout.css";
 @import "./structure/container.css";

@@ -14,13 +14,13 @@
 .hero-title {
   font-size: var(--title-font-size);
   margin-bottom: var(--spacing-medium);
-  color: var(--text-color);
+  color: var(--text-color-dark);
 }
 
 .hero-subtitle {
   font-size: var(--body-font-size);
   margin-bottom: var(--spacing-large);
-  color: var(--text-color);
+  color: var(--text-color-dark);
 }
 
 .skill-badges {

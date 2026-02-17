@@ -1,0 +1,68 @@
+---
+import { getCollection, getEntry } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import { render } from "astro:content";
+
+export async function getStaticPaths() {
+  const projects = await getCollection("projects");
+  return projects.map((project) => ({
+    params: { project: project.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+---
+
+<Layout>
+  <section id="project" class="container mt-lg mb-lg mx-auto">
+    <div class="mb-md inline-block">
+      <a class="btn btn--ghost" href="/projects">← Back to Projects</a>
+    </div>
+    <h1 class="text-3xl font-bold mb-md">{project.data.title}</h1>
+
+    <div class="flex flex-col gap-lg">
+      <img
+        src={project.data.imageUrl.src}
+        alt={project.data.title}
+        class="img-responsive rounded"
+      />
+
+      <div class="flex flex-col gap-md">
+        <p>{project.data.description}</p>
+
+        <div class="flex gap-md">
+          {
+            project.data.liveUrl && (
+              <a
+                href={project.data.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--primary"
+              >
+                View Live
+              </a>
+            )
+          }
+
+          {
+            project.data.githubUrl && (
+              <a
+                href={project.data.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--secondary"
+              >
+                View Code
+              </a>
+            )
+          }
+        </div>
+      </div>
+    </div>
+    <div class="markdown-body mt-lg">
+      <Content />
+    </div>
+  </section>
+</Layout>

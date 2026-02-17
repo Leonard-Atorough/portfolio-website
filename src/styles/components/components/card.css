@@ -33,6 +33,7 @@
   gap: var(--spacing-medium);
   box-shadow: none;
   border: var(--border-width) var(--border-style) var(--border-color-secondary);
+  width: 100%;
 }
 
 .project-card:hover {
@@ -41,9 +42,10 @@
 
 .project-card__image {
   width: 100%;
-  height: 200px;
+  height: 300px;
+  overflow: hidden;
   border-radius: var(--border-radius-small);
-  border-bottom: var(--border-width) var(--border-style) var(--border-color);
+  border: var(--border-width) var(--border-style) var(--primary-color);
   background-color: var(--secondary-color);
 }
 
