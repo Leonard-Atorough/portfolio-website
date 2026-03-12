@@ -3,7 +3,7 @@ title: Heat Website Project
 description: "A website built to track standings in a custom season of the Heat board game, designed by a friend."
 imageUrl: "/src/assets/images/heat.jpeg"
 tags: ["React", "TypeScript", "CSS", "Web Development", "Node.js", "Express", "MongoDB"]
-liveUrl: "https://example.com"
+liveUrl: "https://heatseasons.netlify.app"
 githubUrl: "https://github.com/Leonard-Atorough/heat-seasons"
 ---
 
